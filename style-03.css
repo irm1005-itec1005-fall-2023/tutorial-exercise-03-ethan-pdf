@@ -19,6 +19,7 @@
 
 body {
   /* Add a background colour of #1d3557ff */
+  background-color: #1d3557ff;
 }
 
 
@@ -26,17 +27,24 @@ body {
 
 header {
   /* Set the text colour, margins and padding */
+  color: #3759ee;
+  margin: 50px;
 }
 
 header .site-title {
   /* Add some cool text styles to the site title */
   /* Experiment with the font-size, font-weight, text-transform, letter-spacing */
+  font-size: 70px;
+  font-weight: 800;
+  text-transform: capitalize;
+  letter-spacing: 5px;
 }
 
 header nav {
   /* Experiment with margin until you find spacing
    * that you like
   */
+  margin: 50px;
 }
 
 header nav ul {
@@ -46,15 +54,20 @@ header nav ul {
    * the bullet points
    */
   /* You may also have tweak the margin and padding */
+  list-style: none;
+  
 }
 
 header a {
   /* Set the text colour and remove the underline */
   /* Make the links white (or any cool colour */
+  color: #3759ee;
+  text-decoration: none;
 }
 
 header a:hover {
   /* Add an underline to the links when you hover over them */
+  text-decoration: underline;
 }
 
 /* GENERAL SECTION STYLES */
@@ -73,6 +86,10 @@ header a:hover {
 main > section {
   /* Set the margins, padding and background colour */
   /* Set the border radius to give it rounded corners */
+  margin: 50px;
+  background-color: #3759ee;
+  padding: 3rem;
+  border-radius: 4rem;
 }
 
 /* This fancy code removes the bottom margin from the last section */
@@ -84,18 +101,31 @@ main > section:last-child {
 
 /* Now let's setup the Hero section in main styles */
 main section.hero {
+  padding: 0.9rem;
+  background-color: rgb(103, 231, 199);
+  border-radius: 2rem;
   /* Start by setting the padding */
   /* Set the background colour */
   /* Set the border radius to give it rounded corners */
 }
 
 main section.hero h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: -5px;
+  text-align: center;
   /* Set the font size, margins and text colour */
   /* Experiment with letter-spacing to see what it does */
   /* Google how to align text in the center */
 }
 
 main section.hero .secondary-heading {
+  font-size: 1.5rem;
+  color: #f5f5f5;
+  font-weight: 700;
+  letter-spacing: 0.7rem;
+  text-align: center;
+  text-decoration: underline;
   /* Set the font size, margins and text colour */
   /* Experiment with letter-spacing to see what it does */
   /* Google how to align text in the center */
@@ -117,10 +147,17 @@ main section.hero img {
 /* Next up is the second section, which is our menu styles */
 
 main section.menu {
+  padding: 5rem;
+  background-color: bisque;
+  border-radius: 2rem;
   /* Set the padding, background colour and border radius */
 }
 
 main section.menu ul {
+  list-style: none;
+  list-style: georgian;
+  margin-left: 50px;
+  margin-right: 50px;
   /* Remove the list styles */
   /* Experiment with list-style property
    * to see what it does and how to remove
@@ -130,10 +167,18 @@ main section.menu ul {
 }
 
 main section.menu ul li {
+  padding: 4rem;
+  margin-top: 9rem;
+  background-color: #f5f5f5;
+  border-radius: 90rem;
   /* Set the padding, margin-top and border radius */
   /* Set the background colour */
 }
 
+main section.menu ul li:nth-child(even) {
+  background-color: #181818;
+  color: #f5f5f5;
+}
 /* Use psuedo classes nth-child(even)
  * to give ever second list item in main
  * a different background colour and text color
@@ -148,11 +193,22 @@ main section.menu ul li {
 
 /* Almost done! The last section is our testimonial styles */
 
-main section.testimonial {
+main section.testimonials {
+  padding: 30px;
+  background-color: #f1faeeff;
+  border-radius: 2rem;
   /* Set the padding and background colour #f1faeeff */
   /* Set the border radius */
 }
 
+main section.testimonials h2 {
+  text-align: center;
+  font-size: 70px;
+  font-weight: 800;
+  text-transform: capitalize;
+  letter-spacing: -5px;
+  color: rgb(66, 71, 67);
+}
 /*
   Create a css selector that targets the h2 element
   inside the testimonials section
@@ -167,9 +223,20 @@ main section.testimonial {
 main section.testimonials img {
   width: 100%;
   max-width: 100%;
+  border-radius: 2rem 2rem 0rem 0rem;
+  
   /* Put a border radius on just the top of the image */
 }
 
+main section.testimonials blockquote {
+  text-align: center;
+  font-weight: 800;
+  font-size: 15px;
+  padding: 1rem;
+  background-color: #d3d3cc;
+  color: burlywood;
+  border-radius: 0rem 0rem 2rem 2rem;
+}
 /*
   Create a css selector that targets the blockquote element
   inside the testimonials section
