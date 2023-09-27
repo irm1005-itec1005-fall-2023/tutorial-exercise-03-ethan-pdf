@@ -9,6 +9,9 @@
 main .light-box {
   margin: 2rem 0;
   padding: 1rem;
+  background-color: #f5f5f5;
+  border-radius: 0.5rem;
+  color:#1d3557ff;
   /* 1. Add a background colour of #f5f5f5 */
   /* 2. Add a border radius of 0.5rem */
   /* 3. Add a text color of #1d3557ff */
@@ -27,9 +30,18 @@ Create a class called dark-box and add the following styles to it
   6. Add a text color of #f5f5f5
 
 */
-
+main .dark-box {
+  background-color: #242121;
+  border-radius: 0.5rem;
+  color: #f5f5f5;
+  padding: 1rem;
+  margin: 2rem 0;
+}
 /* Styles for the link in the dark box */
-
+.dark-box a 
+{
+  color: #e63946ff;
+}
 /*
 
 Create a selector that targets the link in the dark box and add the following styles to it
@@ -39,7 +51,13 @@ Create a selector that targets the link in the dark box and add the following st
 */
 
 /* Styles for the red box */
-
+.red-box {
+  padding: 1rem;
+  margin: 2rem 0;
+  background-color: #e63946ff;
+  border-radius: 0.5rem;
+  color: #f5f5f5;
+}
 /*
 
 Create a class called red-box and add the following styles to it
@@ -53,7 +71,9 @@ Create a class called red-box and add the following styles to it
 */
 
 /* Styles for the link in the dark box */
-
+.red-box a {
+  color: #090909;
+}
 /*
 
 Create a selector that targets the link in the dark box and add the following styles to it
@@ -63,7 +83,13 @@ Create a selector that targets the link in the dark box and add the following st
 */
 
 /* Styles for the blux box */
-
+.blue-box {
+  padding: 1rem;
+  margin: 2rem 0;
+  background-color: #457b9dff;
+  border-radius: 0.5rem;
+  color: #f5f5f5;
+}
 /*
 
 Create a class called blue-box and add the following styles to it
@@ -82,10 +108,16 @@ hint: li:nth-child(odd)
 */
 
 /* 15. enter your code here */
-
+li:nth-child(odd) {
+  background-color: #e63946ff;
+  color: black;
+}
 /* Use psuedo classes to give the last list item (last child) within a list in main a completely different background colour
 */
-
+main li:nth-last-child(1){
+  background-color: coral;
+  color: aqua;
+}
 /* 16. enter your code here */
 
 /*
