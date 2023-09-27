@@ -115,8 +115,8 @@ li:nth-child(odd) {
 /* Use psuedo classes to give the last list item (last child) within a list in main a completely different background colour
 */
 main li:nth-last-child(1){
-  background-color: coral;
-  color: aqua;
+  background-color: #e928c9;
+  color: #24d642;
 }
 /* 16. enter your code here */
 
